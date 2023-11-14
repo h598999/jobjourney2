@@ -1,7 +1,9 @@
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=API_KEY)
 from config import API_KEY
 
-openai.api_key = API_KEY
+
 
 def send_to_chatgpt(cv, application, about, job, language, customInstruction):
     try:
@@ -22,11 +24,9 @@ def send_to_chatgpt(cv, application, about, job, language, customInstruction):
              }
         ]
         
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=messages,
-            max_tokens=1500
-        )
+        response = client.chat.completions.create(model="gpt-4",
+        messages=messages,
+        max_tokens=1500)
         
         return response.choices[0].message['content'].strip()
     except Exception as e:
