@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Fetch the API key from environment variables
-API_KEY = os.environ.get("CHATGPT_API_KEY")
+API_KEY = os.environ.get("API_KEY")
 
 if not API_KEY:
     raise ValueError("Please set the CHATGPT_API_KEY environment variable.")
