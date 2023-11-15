@@ -37,3 +37,8 @@ Create your own custom instruction in `custom_instruction.txt` to tailor your ap
 ## License
 MIT
 
+## Link to deployed application
+https://jobjourney2-hciudfxhyrkznkvy44x2jf.streamlit.app/
+
+## Rapport 
+[Oblig 2 ML del.pdf](https://github.com/h598999/jobjourney2/files/13366977/Oblig.2.ML.del.pdf)
