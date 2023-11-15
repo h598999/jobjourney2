@@ -1,9 +1,8 @@
 from openai import OpenAI
+import streamlit as st
+import os
 
-from config import API_KEY
-
-client = OpenAI(api_key=API_KEY)
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 
 def send_to_chatgpt(cv, application, about, job, language, customInstruction):
