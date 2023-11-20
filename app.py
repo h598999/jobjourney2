@@ -7,7 +7,6 @@ with open("custom_instruction.txt", "r") as f:
     customInstruction = f.read()
 
 API_KEY = st.secrets["OPENAI_API_KEY"]
-print(API_KEY)
 st.title('Job application generator')
 
 st.write("Upload your CV, input your current Cover Letter, as well as the URL for the company's 'About Us' page and the job application page. Then click 'Generate job application' to generate a new job application.")
